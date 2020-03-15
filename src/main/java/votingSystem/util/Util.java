@@ -21,14 +21,13 @@ public class Util {
 
         Set<Dish> dishes = new HashSet<>();
 
-        for (int i = 0; i < numberOfDishes; i++) {
+        for (int i = 0; i < numberOfDishes;) {
             int randomDishOrdinal = new Random().nextInt(Dish.values().length);
             Dish randomDish = Dish.values()[randomDishOrdinal];
 
             if (!dishes.contains(randomDish)) {
                 dishes.add(randomDish);
-            } else {
-                i--;
+                i++;
             }
         }
 
