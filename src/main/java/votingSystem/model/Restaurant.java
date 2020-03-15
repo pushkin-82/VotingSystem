@@ -1,8 +1,6 @@
 package votingSystem.model;
 
-import java.util.Set;
-
-public class Restaurant extends AbstractEntity {
+public class Restaurant extends AbstractBaseEntity {
 
     private String name;
 

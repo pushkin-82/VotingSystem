@@ -6,5 +6,23 @@
 
     <display-name>Voting System</display-name>
 
+    <servlet>
+        <servlet-name>userServlet</servlet-name>
+        <servlet-class>votingSystem.web.UserServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userServlet</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>restaurantServlet</servlet-name>
+        <servlet-class>votingSystem.web.RestaurantServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>restaurantServlet</servlet-name>
+        <url-pattern>/restaurants</url-pattern>
+    </servlet-mapping>
 </web-app>

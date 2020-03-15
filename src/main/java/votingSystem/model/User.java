@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.EnumSet;
 import java.util.Set;
 
-public class User extends AbstractEntity {
+public class User extends AbstractBaseEntity {
     private String name;
     private String email;
     private String password;
